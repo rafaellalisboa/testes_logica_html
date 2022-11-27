@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function titulo(titulo) {
+        document.write("<h3>" +titulo + "</h3>");
+    }
+    titulo("Em média, um casal tem filhos quando atinge a idade de 28 anos.")
+    titulo("Seguindo essa média, se os portugueses invadiram em 1500 o Brasil. A primeira geração de miscigenados portugueses-brasileiros surgiu em 1528, a segunda em 1556 e assim por diante.")
+    titulo("Desde 1500 até o ano atual, quantas gerações se passaram?")
+
+    var difAnos = (2022 - 1500)
+    var mediaGeracao = (difAnos / 15)
+    
+    mostra("A diferença de anos desde a invasão portuguesa é de " + difAnos + ".")
+    mostra("A média de gerações desde a invasão até o ano de 2022 é de " + mediaGeracao + ".")
+    
+</script>

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+    alert("Essa é uma exibição de números até 100")
+var selecao = prompt(("Você quer começar com o número 0 ou 1?"))
+var contadorPar = 0
+var contadorImpar = 1
+var limite = 100;
+
+while ( contadorPar <= limite && selecao == 0) {
+    mostra ("Os números pares são " + (contadorPar));
+    contadorPar = contadorPar + 2
+}
+
+while ( contadorImpar <= limite && selecao == 1) {
+    mostra ("Os números ímpares são " + (contadorImpar));
+    contadorImpar = contadorImpar + 2
+}
+
+mostra("FIM")
+
+</script>

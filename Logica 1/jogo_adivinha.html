@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulalinha () {
+    document.write ("<br><br>")
+}
+
+function mostra (texto) {
+    document.write (texto)
+    pulalinha()
+}
+
+function sorteio (n) {
+       return Math.round (Math.random()*n)
+
+}
+
+alert ("OLÁ !! TENTE ACERTAR QUAL NÚMERO EU PENSEI.SERÁ QUE CONSEGUE ME VENCER ?");
+
+var tentativa = 1;
+
+while( tentativa <= 3) {
+    var numeroaleatorio = sorteio(10);
+    var numerousuario = parseInt (prompt("Digite um número") );
+
+        if (numerousuario == numeroaleatorio) {
+            mostra ("<h2> Olha só, você me venceu !!! <br> Parabéns</h2>");
+            break;
+        } else {
+            mostra ("<h2> Poxa, que pena ! </h2> <br> O número que eu pensei foi " + numeroaleatorio);
+        }
+        tentativa ++;
+
+}
+
+
+
+
+</script>

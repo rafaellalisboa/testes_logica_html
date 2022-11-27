@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+/// uso de var quando são sitauções pequenas ou que não exigem mais de uma ação direta
+/// no caso de criar uma sequencia de ações, usa-se a expessao 'function' onde voce nomeia ela e depois, entre chaves descreve seus parâmnetros
+///     fuction entreLinha () {
+///          document.write("<br> <br>");
+///          document.write ("texto exemplo")
+///          document.write (Math.round(100/3))
+///        }
+    
+    var tanque = 40
+    var caminhoComGasolina = 480
+    var caminhoComAlcool = 300
+    var espaco = "<br><br>"
+
+    document.write("O percurso com gasolian foi de 480 km. Sabendo que o tanque do veículo tem capacidade total de 40 litos, nossa média foi: "+ caminhoComGasolina/tanque + " km/L" + espaco);
+    document.write("O percuso feito com alcool foi de 300 km, logo nossa média é " + caminhoComAlcool/tanque + " km/L");
+</script>
+

@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+var limiteAno = parseInt( prompt("Entre com um ano limite."));
+var anoOlimpiada = 1896;
+
+while (anoOlimpiada <= limiteAno) {
+    mostra ("Teve Olimpíada em " + anoOlimpiada);
+    anoOlimpiada = anoOlimpiada + 4
+}
+
+mostra("FIM")
+
+</script>

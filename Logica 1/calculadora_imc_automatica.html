@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+        var nomeUser = prompt ("Como vê quer ser chamado?")
+        var alturaInformada = prompt( nomeUser + ", informe sua altura - USE O FORMATO 00.00")
+        var pesoInformado = prompt(nomeUser + "informe seu peso - USE O FORMATO 00.00")
+        var imc = calculaImc(alturaInformada, pesoInformado)
+
+    if (imc <18.5) {
+    mostra("Você está abaixo do nível recomendado pela OMS.")
+}
+
+    if(imc > 35) {
+        mostra("Você está acima do nível recomnedado pela OMS.")
+    } 
+
+    if (imc >= 18.5 && imc <= 35) {
+            {
+            mostra ("Você esta dentro dos níveis estipulados como sadáveis pela OMS.")
+            }
+    }
+document.write(nomeUser + " o seu IMC é " + imc)
+
+//quando trabalho com numeros posso usar o 'parseInt()' para idenficar no prompt para captar apenas numeros
+// parseInt(prompt("xxxxx"));
+
+</script>
